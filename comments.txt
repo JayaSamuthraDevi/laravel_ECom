@@ -1,0 +1,18 @@
+#--to start sever
+php artisan serve
+
+#--to create table
+php artisan make:migration create_users_table
+#--to run/migrate tables to db
+php artisan migrate
+#--make Seeder 
+php artisan make:Seeder UserSeeder
+#--for manually send data to table 
+php artisan db:seed --class UserSeeder
+#--to make controller for checking login
+php artisan make:controller UserController
+#--to make index page of this project
+ php artisan make:controller ProductController
+#--to make website not to login all the time user comes to web
+middleware is to make website to remember u 
+php artisan make:middleware UserAuth
