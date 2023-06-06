@@ -16,3 +16,19 @@ php artisan make:controller UserController
 #--to make website not to login all the time user comes to web
 middleware is to make website to remember u 
 php artisan make:middleware UserAuth
+#--to create new product table
+ php artisan make:migration create_products_table
+#-- to push table to db
+php artisan migrate
+#--Seeder file to insert values to table
+ php artisan make:seeder ProductSeeder
+ #--Seed dats to table
+ php artisan db:seed --class ProductSeeder
+#-- to make product model slider
+php artisan make:model Product
+#-- to make cart table
+php artisan make:migration create_cart_table
+#--after this only table creates on db
+php artisan migrate
+#--to make cart model
+ php artisan make:model cart
