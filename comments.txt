@@ -32,3 +32,9 @@ php artisan make:migration create_cart_table
 php artisan migrate
 #--to make cart model
  php artisan make:model cart
+ #--create ordermanage table
+ php artisan make:migration create_orders_table
+ #--push to db
+ php artisan migrate
+ #--to access values from table make a model of table
+ php artisan make:model order
